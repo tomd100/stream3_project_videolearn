@@ -1,4 +1,4 @@
-"""videolearn URL Configuration
+"""snippets URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -13,9 +13,18 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
 from django.contrib import admin
+from django.conf.urls import url, include
+
+from accounts.views import home_page
+from accounts import urls as accounts_urls
+from videos import urls as videos_urls
+from snippets import urls as snippets_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r"^$", home_page, name="home"),
+    url(r"^accounts/", include(accounts_urls)),
+    url(r"^videos/", include(videos_urls)),
+    url(r"^snippets/", include(snippets_urls)),
 ]

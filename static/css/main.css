@@ -1,0 +1,26 @@
+/* Video List */
+/*---------------------------------------*/
+
+.field_input_label{
+    margin:0px;
+}
+
+.field_input{
+    width: 600px;
+}
+
+/*---------------------------------------*/
+
+#video_list_container{
+    border:solid;
+    border-width: thin;
+}
+
+.video_list_item{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+/*---------------------------------------*/
+
+/* Video List */
