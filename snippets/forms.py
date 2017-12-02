@@ -15,4 +15,11 @@ class SnippetAddForm(forms.ModelForm):
         model = SnippetItem
         fields = ['snippet_title']
         
-#-------------------------------------------------------------------------------        
+#-------------------------------------------------------------------------------   
+
+# class VideoSnippetForm(forms.ModelForm):
+#     class Meta:
+#         model = SnippetItem
+#         fields = ('snippet_title') 
+        
+#-------------------------------------------------------------------------------           

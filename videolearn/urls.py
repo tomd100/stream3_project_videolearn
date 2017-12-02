@@ -26,5 +26,5 @@ urlpatterns = [
     url(r"^$", home_page, name="home"),
     url(r"^accounts/", include(accounts_urls)),
     url(r"^videos/", include(videos_urls)),
-    url(r"^snippets/", include(snippets_urls)),
+    url(r"^videos/", include(snippets_urls)),
 ]

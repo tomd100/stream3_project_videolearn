@@ -16,7 +16,7 @@ class VideoItem(models.Model):
 #-------------------------------------------------------------------------------
 
 class SnippetItem(models.Model):
-    snippet_id = models.ForeignKey(VideoItem, on_delete=models.CASCADE)
+    video_id = models.ForeignKey(VideoItem, on_delete=models.CASCADE)
     snippet_title = models.CharField(max_length=500, blank=False)
     snippet_start = models.FloatField(default = VideoItem().video_start)
     snippet_end = models.FloatField(default = VideoItem().video_end)

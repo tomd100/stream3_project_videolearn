@@ -1,0 +1,12 @@
+{% load bootstrap_tags %}
+
+<h2>Snippets</h2>
+
+<!--For to add snippet goes here?-->
+
+{% for snippet in snippets %}
+<div>
+    <p>Snippets</p>
+    <h3>{{ snippet.title }}</h3>
+</div>
+{% endfor %}

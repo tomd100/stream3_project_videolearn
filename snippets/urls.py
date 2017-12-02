@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from .views import list_snippets
+from .views import play_snippets
 
 urlpatterns = [
-    url(r'^snippets', list_snippets, name='list_snippets'),
+    url(r'^snippets/(/d+)$', play_snippets, name='play_snippets'),
 ]
